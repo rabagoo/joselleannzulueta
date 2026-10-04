@@ -1,27 +1,36 @@
-# Joselle Ann Zulueta — Portfolio
+﻿<div align="center">
 
-Static portfolio matching https://joselleannzuluetaportfolio.netlify.app/.
-No build step, package installation, or API keys are required.
+# Joselle Ann Zulueta
 
-## Preview
+**Website & UI/UX Designer**
 
-Open `index.html` in a browser, or run `python -m http.server 8000`
-and visit http://localhost:8000.
+Based in the Philippines · Open to freelance projects
 
-## Files
+[View My Portfolio](https://joselleannzuluetaportfolio.netlify.app/)
 
-- `index.html`: page content and semantic markup.
-- `css/styles.css`: responsive layout, themes, and animations.
-- `js/theme-init.js`: restores the theme before the page renders.
-- `js/main.js`: portfolio data, navigation, filters, and core interactions.
-- `js/features.js`: project finder, skill details, statistics, and inquiry wizard.
-- `js/portfolio-assistant.js`: local portfolio questions and answers.
-- `images/`: portrait and icons extracted from the original embedded images.
-- `.github/workflows/deploy.yml`: GitHub Pages deployment on pushes to `main`.
+</div>
 
-The assistant runs locally rather than using the live site's Netlify AI function.
-Google Fonts requires an internet connection. Images are served locally.
+---
 
-Keep `theme-init.js` in the head and load the deferred scripts in their existing
-order: `main.js`, `features.js`, then `portfolio-assistant.js`. They share the
-portfolio data declared in `main.js`.
+## About Me
+
+Hi, I’m Joselle! I’m a creative and technology-oriented professional growing in web development, UI/UX design, and AI tools.
+
+I enjoy designing clean interfaces and supporting businesses through virtual assistance, e-commerce, and digital marketing. My goal is to help brands run smoothly and look beautiful online.
+
+## What I Do
+
+- Website Design & Development
+- UI/UX Design & Prototyping
+- Social Media Graphics
+- Digital Content Design
+
+## My Work
+
+Explore projects like **Aurelia Lens**, **StudyHub**, **StudyNest**, and **StudyNori** in my [online portfolio](https://joselleannzuluetaportfolio.netlify.app/#projects).
+
+## Let’s Connect
+
+Have a project in mind? I’d love to hear about it.
+
+[Email](mailto:joselle77zulueta@gmail.com) · [LinkedIn](https://www.linkedin.com/in/joselle-ann-zulueta-07a01b363/) · [Portfolio](https://joselleannzuluetaportfolio.netlify.app/)
