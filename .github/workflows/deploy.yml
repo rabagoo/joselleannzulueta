@@ -12,10 +12,11 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
+    # Repository settings must allow main to deploy to this environment.
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -27,11 +28,18 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare static site
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp -R css js images _site/
+          touch _site/.nojekyll
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
